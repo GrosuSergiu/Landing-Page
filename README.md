@@ -1,4 +1,5 @@
 LANDING-PAGE
+<a href="https://github.com/GrosuSergiu/Landing-Page/index.html">Live miere</a>
 
 Titlu: Magazin online (miere de albine)
 Descriere: acesta este un proiect pentru scoala, unde eu am  decis sa fac despre un magazin online unde se vinde miere de albini.
