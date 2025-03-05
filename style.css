@@ -67,15 +67,6 @@ body {
     transform: translateY(-5px);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-
-@keyframes colorChange {
-    0% { background-color: gold; }
-    25% { background-color: yellow; }
-    50% { background-color: blue; }
-    75% { background-color: green; }
-    100% { background-color: gold; }
-}
-
 .produse {
     display: flex;
     flex-wrap: wrap;
