@@ -1,10 +1,8 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-
 }
 
 .navbar {
@@ -29,9 +27,32 @@ body {
 }
 
 .hero {
-    background-color: lightgoldenrodyellow;
+    position: relative;
     text-align: center;
     padding: 50px 20px;
+    color: white; 
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.infocs.ro/wp-content/uploads/2018/07/albine-fagure-820x300.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px); 
+    z-index: -1; 
+}
+
+.hero img, .hero h3, .hero p, .hero a {
+    position: relative;
+    z-index: 1;
+}
+}
+
 }
 
 .hero h1 {
@@ -46,7 +67,7 @@ body {
 .hero p {
     font-size: 1.2em;
     padding: 0 20px;
-    color: black;
+    color: white;
 }
 
 .hero .btn {
@@ -67,6 +88,9 @@ body {
     transform: translateY(-5px);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
+
+
+
 .produse {
     display: flex;
     flex-wrap: wrap;
@@ -135,7 +159,6 @@ body {
 .card .btn-buy {
     display: inline-block;
     margin-top: 15px;
-    margin-bottom: 20px;
     padding: 8px 15px;
     background-color: gold;
     color: white;
@@ -224,6 +247,5 @@ body {
         width: 100%;
     }
 }
-
 
 
