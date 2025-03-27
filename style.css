@@ -248,4 +248,15 @@ body {
     }
 }
 
+.contact {
+    background-color: moccasin;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black; 
+    width: 50%;
+    margin: 20px auto; 
+    border-radius: 10px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
 
