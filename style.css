@@ -1,14 +1,12 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-
 }
 
 .navbar {
-    background-color: lightyellow;
+    background-color: white;
     padding: 1em;
     text-align: center;
     position: sticky;
@@ -28,15 +26,45 @@ body {
     color: darkorange;
 }
 
+/* Stilizare pentru logo */
+.navbar .logo {
+    width: 82px; /* Mărimea logo-ului */
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10; /* Asigură-te că logo-ul apare deasupra altor elemente */
+}
+
 .hero {
-    background-color: lightgoldenrodyellow;
+    position: relative;
     text-align: center;
     padding: 50px 20px;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.infocs.ro/wp-content/uploads/2018/07/albine-fagure-820x300.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px); 
+    z-index: -1; 
+}
+
+.hero img, .hero h3, .hero p, .hero a {
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
     font-size: 2.5em;
-    color: black;
+    color: white;
     overflow: hidden;
     white-space: nowrap;
     border-right: 3px solid black;
@@ -46,7 +74,7 @@ body {
 .hero p {
     font-size: 1.2em;
     padding: 0 20px;
-    color: black;
+    color: white;
 }
 
 .hero .btn {
@@ -67,6 +95,7 @@ body {
     transform: translateY(-5px);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
+
 .produse {
     display: flex;
     flex-wrap: wrap;
@@ -135,7 +164,6 @@ body {
 .card .btn-buy {
     display: inline-block;
     margin-top: 15px;
-    margin-bottom: 20px;
     padding: 8px 15px;
     background-color: gold;
     color: white;
@@ -225,17 +253,6 @@ body {
     }
 }
 
-.contact {
-    background-color: moccasin;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid black; 
-    width: 50%;
-    margin: 20px auto; 
-    border-radius: 10px; 
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
-}
-
 /* Stil pentru pagina de comanda */
 .comanda {
     max-width: 800px;
@@ -301,27 +318,25 @@ form input[type="submit"]:active {
     transform: translateY(1px);
 }
 
-/* Stiluri pentru navbar (pentru uniformitate) */
-.navbar {
-    background-color: lightyellow;
-    padding: 1em;
+.despre {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fffaf0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
-.navbar a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: color 0.5s;
-}
-
-.navbar a:hover {
+.despre h2 {
+    font-size: 2em;
     color: darkorange;
+    margin-bottom: 20px;
 }
 
-
-
+.despre p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}

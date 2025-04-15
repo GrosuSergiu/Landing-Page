@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comanda Miere</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
         <nav class="navbar">
             <a href="index.html">Acasa</a>
             <a href="comanda.html">Comanda</a>
+            <a href="despre.html">Despre</a>
+
         </nav>
     </header>
 
@@ -18,16 +21,16 @@
         <h2>Completează comanda</h2>
         <form action="#" method="POST">
             <label for="nume">Numele tău:</label>
-            <input type="text" id="nume" name="nume" required>
+            <input type="text" id="nume" name="nume" placeholder="Introdu numele tău" required>
 
             <label for="adresa">Adresa de livrare:</label>
-            <input type="text" id="adresa" name="adresa" required>
+            <input type="text" id="adresa" name="adresa" placeholder="Introdu adresa de livrare" required>
 
             <label for="produs">Produs ales:</label>
-            <input type="text" id="produs" name="produs" required>
+            <input type="text" id="produs" name="produs" placeholder="Introdu produsul ales" required>
 
-            <label for="cantitate">Cantitate:</label>
-            <input type="number" id="cantitate" name="cantitate" required>
+            <label for="cantitate">Cantitate (kg):</label>
+            <input type="number" id="cantitate" name="cantitate" placeholder="Cantitatea dorită" required>
 
             <input type="submit" value="Trimite Comanda">
         </form>
