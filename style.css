@@ -317,7 +317,6 @@ form input[type="submit"]:hover {
 form input[type="submit"]:active {
     transform: translateY(1px);
 }
-<<<<<<< HEAD
 
 .despre {
     max-width: 800px;
@@ -341,5 +340,4 @@ form input[type="submit"]:active {
     margin-bottom: 15px;
     line-height: 1.6;
 }
-=======
->>>>>>> 9b41d27508a2c1f85d4dd49c5cc9385982bd14b2
+
